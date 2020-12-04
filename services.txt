@@ -1,0 +1,99 @@
+service names:
+
+echoService:----------
+
+verifyToken:-----------
+{
+    "service_name" : "verifyToken",
+    "param" : {
+        
+    }
+}
+
+generateToken:--------
+{
+    "service_name" : "generatetoken",
+    "param" : {
+        "email" : "sakib@email.com",
+        "pass" : "sakib"
+    }
+}
+
+{
+	"service_name":"generatetoken",
+	"param":{
+		"email":"sakib@email.com",
+		"password":"sakib"
+		}
+}
+
+{
+    "response": {
+        "staus": 200,
+        "message": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDM2NzAyNDMsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYwMzY3NzQ0MywidXNlcklkIjoiMSJ9.FoMTPLGgZF_hpbfknsS1_PWQQfU9SHbqEFVrf9s90E4"
+        }
+    }
+}
+
+{
+    "response": {
+        "staus": 108,
+        "message": "Email and password not matched"
+    }
+}
+
+
+addNewCategory:----------
+{
+    "service_name" : "addNewCategory",
+    "param" : {
+        "name" : "",
+        "description" : ""
+    }
+}
+INSERT INTO `category` (`id`, `name`, `description`, `created_at`) VALUES (NULL, 'Smart Phone', 'some description about Smart phone', current_timestamp()), (NULL, 'Laptop', NULL, current_timestamp());
+
+getAllCategory:------------
+{
+    "service_name" : "getAllCategory",
+    "param" : {}
+}
+
+updateCategory:------------
+{
+    "service_name" : "updateCategory",
+    "param" : {
+        "id": "4",
+        "name": "dfg",
+        "description": "new dfg"
+    }
+}
+
+deleteCategory:------------
+"getAllSupplier",
+"addNewSupplier",
+"updateSupplier",
+"deleteSupplier"
+"getAllProduct"
+
+userAuthenticate:----------
+
+
+{
+    "name" : "deleteCustomer",
+    "param" : {
+        "customerId" : "2"
+    }
+}
+
+{
+    "name" : "addCustomer",
+    "param" : {
+        "name" : "asdfs",
+        "email": "sdfas@sakib.ccom",
+        "addr" : "adfsdfsdf",
+        "mobile" : "2sss34234234234"
+    }
+}
+
